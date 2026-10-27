@@ -1,0 +1,14 @@
+schema: playkeen/v1
+id: keenplay-demo
+name: KeenPlay Demo
+version: 0.1.0
+type: bash
+architectures: [arm64, armv7, amd64]
+install: app/install.sh
+update: app/update.sh
+remove: app/remove.sh
+status: app/status.sh
+terminal:
+  enabled: true
+  provider: ttyd
+  command: /opt/bin/keenplay-demo
